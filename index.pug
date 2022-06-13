@@ -13,17 +13,17 @@ html(lang="en")
         nav
           .cut.first
             li
-              i(class="fa-solid fa-circle-user")
+              i(class="fa-brands fa-angellist")
               p= mainName 
           .right-head 
             .cut.second
-              i(class="fa-solid fa-bars")
+              i(class="fa-solid fa-bars", id="other-nav-hider")
               i(class="fa-solid fa-search")
               input(placeholder="Search Now")
             .cut.third
               i(class="fa-solid fa-bell")
               i(class="fa-solid fa-circle-user")
-              i(class="fa-solid fa-ellipsis")
+              i(class="fa-solid fa-ellipsis", id="nav-hider")
       .inside 
         .left-bar
           ul 
@@ -66,3 +66,5 @@ html(lang="en")
           h1 Welcome 
             =mainName
           img(src="./imgs/29_Hand with phone_02.png ", alt="Img Not Available")
+
+    script(src="./js/main.js") 

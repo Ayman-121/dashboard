@@ -190,4 +190,114 @@
 .all .inside .main-side img {
   width: 70%;
 }
+
+.popup {
+  position: fixed;
+  top: 10%;
+  right: 10%;
+  border-radius: 10px;
+  background-color: #fff;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 20px;
+  padding-right: 40px;
+}
+.popup div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px 20px;
+  width: 100%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+.popup div:hover {
+  color: #fff;
+  background-color: #4b49ac;
+}
+.popup div:last-of-type {
+  padding: 10px 10px;
+  margin-left: 5px;
+  margin-bottom: 10px;
+}
+
+.popup2 {
+  left: 10%;
+}
+.popup2 input {
+  outline: 1px solid #000;
+  border: none;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  padding: 5px;
+  padding-left: 10px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-family: "cairo", sans-serif;
+  background-color: #fafafa;
+}
+.popup2 input:hover {
+  background-color: #ddd;
+}
+
+@media (max-width: 750px) {
+  .left-bar {
+    display: none !important;
+    width: 0;
+    height: 0;
+  }
+
+  .header .second {
+    margin: 0;
+  }
+
+  .main-side {
+    width: 100%;
+    text-align: center;
+  }
+}
+@media (max-width: 750px) {
+  .header .second input {
+    display: none;
+  }
+  .header .second i.fa-search {
+    display: none;
+  }
+  .header .cut {
+    margin: 0;
+  }
+  .header .first {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .header .right-head {
+    padding-left: 0px;
+    width: -webkit-fit-content !important;
+    width: -moz-fit-content !important;
+    width: fit-content !important;
+  }
+  .header nav {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .header .third {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+}
 /*# sourceMappingURL=main.css.map */

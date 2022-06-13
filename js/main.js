@@ -133,62 +133,64 @@
 // }
 // setTimeout(test, 0);
 
-// let listShower = document.querySelector("#nav-hider");
+let listShower = document.querySelector("#nav-hider");
 
-// listShower.onclick = function ayman() {
-//   let popup = document.createElement("div");
-//   popup.classList.add("popup");
-//   document.body.appendChild(popup);
+listShower.onclick = function ayman() {
+  let popup = document.createElement("div");
+  popup.classList.add("popup");
+  document.body.appendChild(popup);
 
-//   let a1 = document.createElement("a");
-//   a1.href = "#home";
-//   a1.innerHTML = "Home";
-//   popup.appendChild(a1);
+  let elements = document.querySelectorAll(".left-bar ul li")
 
-//   let a2 = document.createElement("a");
-//   a2.href = "#features";
-//   a2.innerHTML = "Features";
-//   popup.appendChild(a2);
+  elements.forEach((ele) => {
 
-//   let a3 = document.createElement("a");
-//   a3.href = "#about";
-//   a3.innerHTML = "About";
-//   popup.appendChild(a3);
+    for (var i = 0; i < 1; i++) {
 
-//   let a4 = document.createElement("a");
-//   a4.href = "#blog";
-//   a4.innerHTML = "Blog";
-//   popup.appendChild(a4);
+      let Myele = document.createElement("div")
+      Myele.innerHTML = ele.innerHTML;
 
-//   let a5 = document.createElement("a");
-//   a5.href = "#news";
-//   a5.innerHTML = "News";
-//   popup.appendChild(a5);
+      popup.appendChild(Myele)
+    }
 
-//   let a6 = document.createElement("input");
-//   a6.placeholder = "Search";
-//   popup.appendChild(a6);
+  })
 
-//   a1.onclick = function () {
-//     popup.remove();
-//   };
-//   a2.onclick = function () {
-//     popup.remove();
-//   };
-//   a3.onclick = function () {
-//     popup.remove();
-//   };
-//   a4.onclick = function () {
-//     popup.remove();
-//   };
-//   a5.onclick = function () {
-//     popup.remove();
-//   };
+  listShower.onclick = function () {
+    popup.remove();
+    listShower.onclick = function () {
+      ayman();
+    };
+  };
+};
 
-//   listShower.onclick = function () {
-//     popup.remove();
-//     listShower.onclick = function () {
-//       ayman();
-//     };
-//   };
-// };
+
+//
+//
+//
+//
+//
+//
+//
+
+
+let otherListShower = document.querySelector("#other-nav-hider");
+
+otherListShower.onclick = function ayman2() {
+
+
+  let popup = document.createElement("div"); 1
+  popup.classList.add("popup", "popup2");
+  document.body.appendChild(popup);
+
+  let element = document.querySelector(".header .second input")
+
+  let inputField = document.createElement("input")
+  inputField.placeholder = "Search"
+  popup.appendChild(inputField)
+
+  otherListShower.onclick = function () {
+    popup.remove();
+    otherListShower.onclick = function () {
+      ayman2();
+    };
+  };
+};
