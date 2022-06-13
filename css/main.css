@@ -1,4 +1,134 @@
-.left-bar {
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.all {
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  height: 100%;
+}
+.all .header {
+  width: 100%;
+  -webkit-box-shadow: rgb(112, 148, 176) 0px 2px 6px;
+          box-shadow: rgb(112, 148, 176) 0px 2px 6px;
+  color: #777;
+}
+.all .header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.all .header nav .first {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 25%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.all .header nav .first li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+.all .header nav .first li i {
+  cursor: pointer;
+  margin: 0 10px;
+  font-size: 20px;
+  color: #000;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.all .header nav .first li i:hover {
+  color: #444;
+}
+.all .header nav .first li p {
+  font-size: 20px;
+  color: #4b49ac;
+  font-weight: bold;
+}
+.all .header nav .right-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 75%;
+}
+.all .header nav .right-head .cut {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 10px;
+  padding: 10px;
+}
+.all .header nav .right-head .second {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.all .header nav .right-head .second i {
+  cursor: pointer;
+  margin: 0 10px;
+  padding: 5px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.all .header nav .right-head .second i:hover {
+  color: #444;
+}
+.all .header nav .right-head .second input {
+  outline: none;
+  border: none;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  padding: 5px;
+  padding-left: 10px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-family: "cairo", sans-serif;
+  background-color: #fafafa;
+}
+.all .header nav .right-head .second input:hover {
+  background-color: #ddd;
+}
+.all .header nav .right-head .third i {
+  cursor: pointer;
+  margin: 0 10px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.all .header nav .right-head .third i:hover {
+  color: #444;
+}
+.all .inside {
+  margin: 30px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #f4f6fe;
+}
+.all .inside .left-bar {
   display: -ms-grid;
   display: grid;
   -webkit-box-pack: center;
@@ -7,5 +137,57 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 25%;
+  min-height: 80%;
+  background-color: #fff;
+  padding-right: 30px;
+}
+.all .inside .left-bar ul {
+  width: 100%;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+.all .inside .left-bar ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px 20px;
+  width: 100%;
+  margin: 10px 10px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.all .inside .left-bar ul li:hover {
+  color: #fff;
+  background-color: #4b49ac;
+}
+.all .inside .left-bar ul li:last-of-type {
+  padding: 10px 10px;
+  margin-left: 15px;
+}
+.all .inside .main-side {
+  margin-left: 50px;
+  width: calc(75% - 60px);
+  height: 100%;
+}
+.all .inside .main-side h1 {
+  font-family: "cairo", sans-serif;
+  color: #4b49ac;
+}
+.all .inside .main-side img {
+  width: 70%;
 }
 /*# sourceMappingURL=main.css.map */

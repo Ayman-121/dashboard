@@ -6,18 +6,63 @@ html(lang="en")
     meta(http-equiv="X-UA-Compatible", content="IE=edge")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     include includes/links.pug
-    title= mainName
+    title= "Hello " + mainName
   body 
     .all 
       .header
         nav
-          li: i(class="fa-solid fa-circle-user")= mainName 
-          i(class="fa-solid fa-bars")
-          i(class="fa-solid fa-search")
-          input(placeholder="Search Now")
-          i(class="fa-solid fa-bell")
-          i(class="fa-solid fa-circle-user")
-          i(class="fa-solid fa-ellipsis")
-      .left-bar
-        ul 
-          i(class="fa-solid fa-grip") Dashboard
+          .cut.first
+            li
+              i(class="fa-solid fa-circle-user")
+              p= mainName 
+          .right-head 
+            .cut.second
+              i(class="fa-solid fa-bars")
+              i(class="fa-solid fa-search")
+              input(placeholder="Search Now")
+            .cut.third
+              i(class="fa-solid fa-bell")
+              i(class="fa-solid fa-circle-user")
+              i(class="fa-solid fa-ellipsis")
+      .inside 
+        .left-bar
+          ul 
+            li 
+              i(class="fa-solid fa-grip")  
+              p Dashboard
+              i(class="fa-solid fa-angle-right")
+            li
+              i(class="fa-solid fa-cube") 
+              p UI Elemnts
+              i(class="fa-solid fa-angle-right")
+            li 
+              i(class="fa-solid fa-table-columns")
+              p Form Elements
+              i(class="fa-solid fa-angle-right")
+            li 
+              i(class="fa-solid fa-chart-bar")
+              p Charts
+              i(class="fa-solid fa-angle-right")
+            li 
+              i(class="fa-solid fa-table-cells-large")
+              p Tables
+              i(class="fa-solid fa-angle-right")
+            li 
+              i(class="fa-solid fa-ruler")
+              p Icons
+              i(class="fa-solid fa-angle-right")
+            li 
+              i(class="fa-solid fa-user")
+              p User Pages
+              i(class="fa-solid fa-angle-right")
+            li 
+              i(class="fa-solid fa-circle-exclamation")
+              p Error Pages
+              i(class="fa-solid fa-angle-right")
+            li 
+              i(class="fa-solid fa-file")
+              p Documentations
+        .main-side
+          h1 Welcome 
+            =mainName
+          img(src="./imgs/29_Hand with phone_02.png ", alt="Img Not Available")
