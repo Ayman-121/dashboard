@@ -1,0 +1,23 @@
+include includes/vars.pug
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    include includes/links.pug
+    title= mainName
+  body 
+    .all 
+      .header
+        nav
+          li: i(class="fa-solid fa-circle-user")= mainName 
+          i(class="fa-solid fa-bars")
+          i(class="fa-solid fa-search")
+          input(placeholder="Search Now")
+          i(class="fa-solid fa-bell")
+          i(class="fa-solid fa-circle-user")
+          i(class="fa-solid fa-ellipsis")
+      .left-bar
+        ul 
+          i(class="fa-solid fa-grip") Dashboard
